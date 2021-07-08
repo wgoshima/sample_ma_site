@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" as="style" type="text/css" href="/css/lp-reset.css">
+    <link rel="stylesheet" as="style" type="text/css" href="/css/lp-font-awesome.min.css">
+    <link rel="stylesheet" as="style" type="text/css" href="/css/lp-swiper.css">  
+    <link rel="stylesheet" type="text/css" href="/css/validationEngine.jquery.css">
+    <link rel="stylesheet" as="style" type="text/css" href="/css/lp-style.css?date=2021040554604">
+  </head>
+  <body>
+    <div class="page-main">
+        <a href="#contact" class="page-main__cvbtn">まずは無料で相談する</a>
+    </div>
+    <section id="contact" class="contact">
+      <div class="cont__inner">
+        <h2 class="contact__ttl">無料相談・お問い合わせ<span class="contact__ttl--small">は</span>こちら<span class="pc-mode">から</span></h2>
+        <p class="contact__sttl">ご相談・着手金は無料です。お気軽にご相談ください。</p>
+        <form method="post" action="/mailform/mail.php" accept-charset="UTF-8" id="form01">
+          <table class="formTable contact-tbl">
+            <tbody><tr class="contact-tbl__tr">
+              <th class="contact-tbl__th">ご相談事項<span class="contact-tbl__require">必須</span></th>
+              <td class="contact-tbl__td">
+                <p class="mail-form__radio"><label><input type="radio" name="ご相談事項" value="売却を検討" data-prompt-position="bottomLeft" class="validate[required]" checked="checked"><span>売却を検討</span></label></p>
+                <p class="mail-form__radio"><label><input type="radio" name="ご相談事項" value="買収を検討" data-prompt-position="bottomLeft" class="validate[required]"><span>買収を検討</span></label></p>
+                <p class="mail-form__radio"><label><input type="radio" name="ご相談事項" value="その他" data-prompt-position="bottomLeft" class="validate[required]"><span>その他</span></label></p>
+              </td>
+            </tr>
+            <tr class="contact-tbl__tr">
+              <th class="contact-tbl__th">お名前<span class="contact-tbl__require">必須</span></th>
+              <td class="contact-tbl__td">
+                              <p class="contact-tbl__td-name"><input id="user_name" size="20" type="text" name="名字" class="validate[required] contact-tbl__input" data-prompt-position="bottomLeft:0,10" placeholder="例）山田"></p>
+                              <p class="contact-tbl__td-name contact-tbl__td-name02"><input id="user_name02" size="20" type="text" name="名前" class="validate[required] contact-tbl__input" data-prompt-position="bottomLeft:0,10" placeholder="例）太郎"></p>
+                          </td>
+            </tr>
+            <tr class="contact-tbl__tr">
+              <th class="contact-tbl__th">ふりがな<span class="contact-tbl__require">必須</span></th>
+              <td class="contact-tbl__td">
+                              <p class="contact-tbl__td-kana"><input id="user_name_kana" size="30" type="text" name="名字ふりがな" class="validate[required] contact-tbl__input" data-prompt-position="bottomLeft:0,10" placeholder="例）やまだ"></p>
+                              <p class="contact-tbl__td-kana contact-tbl__td-kana02"><input id="user_name_kana02" size="30" type="text" name="名前ふりがな" class="validate[required] contact-tbl__input" data-prompt-position="bottomLeft:0,10" placeholder="例）たろう"></p>
+                          </td>
+            </tr>
+            <tr class="contact-tbl__tr">
+              <th class="contact-tbl__th">メールアドレス<span class="contact-tbl__require">必須</span></th>
+              <td class="contact-tbl__td"><input size="30" type="text" name="メールアドレス" class="validate[required] contact-tbl__input" data-prompt-position="bottomLeft:0,10" placeholder="例）info@willgate.co.jp"></td>
+            </tr>
+            <tr class="contact-tbl__tr">
+              <th class="contact-tbl__th">電話番号<span class="contact-tbl__require">必須</span></th>
+              <td class="contact-tbl__td"><input size="30" type="text" name="電話番号" class="validate[required] contact-tbl__input" data-prompt-position="bottomLeft:0,10" placeholder="例）03-6869-0631"></td>
+            </tr>
+            <tr class="contact-tbl__tr">
+              <th class="contact-tbl__th">企業名</th>
+              <td class="contact-tbl__td"><input size="30" type="text" name="企業名" class="contact-tbl__input" data-prompt-position="bottomLeft:0,10" placeholder="例）株式会社ウィルゲート"></td>
+            </tr>
+            <tr class="contact-tbl__tr">
+              <th class="contact-tbl__th">部署名・役職名</th>
+              <td class="contact-tbl__td">
+                <p class="contact-tbl__td-dept"><input size="30" type="text" name="部署名" class="contact-tbl__input" data-prompt-position="bottomLeft:0,10" placeholder="例）メディア事業部"></p>
+                              <p class="contact-tbl__td-dept contact-tbl__td-dept02"><input size="30" type="text" name="役職名" class="contact-tbl__input" data-prompt-position="bottomLeft:0,10" placeholder="例）部長"></p>
+              </td>
+            </tr>
+            <tr class="contact-tbl__tr">
+              <th class="contact-tbl__th--top">ご相談内容</th>
+              <td class="contact-tbl__td"><textarea name="ご相談内容" cols="30" rows="5" data-prompt-position="bottomLeft:0,10" class="contact-tbl__input" placeholder="ご相談内容をご記入ください"></textarea></td>
+            </tr>
+          </tbody></table>
+          <div class="contact__privarea">
+            <p class="contact__privtxt">ご記入いただきました個人情報はお問合せへのご回答、並びに弊社もしくは関係会社において、弊社が出展または主催する展示会・セミナーのご案内、弊社が提供する商品・サービスに関するご案内など各種情報のご提供、及び弊社営業部門からのご連絡などのためにのみ使用いたします。</p>
+          </div>
+          <p class="contact__submit">
+            <button type="submit" class="contact__btn">
+              上記に同意して入力内容を確認する
+            </button>
+          </p>
+        </form>
+        <div style="margin-top: 30px;"><img src="/wp-content/themes/wma/assets/images/lp/pmark-img.png" alt="プライバシーマーク"></div>
+      </div>
+    </section>
+  </body>
+</html>
